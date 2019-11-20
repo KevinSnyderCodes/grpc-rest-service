@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  api:
+    image: grpc-rest-service
+    build:
+      context: .
+    ports:
+      - 8080:8080
