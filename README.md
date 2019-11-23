@@ -35,18 +35,18 @@ View the OpenAPI spec:
 
 The project layout follows the [standard Go project layout](https://github.com/golang-standards/project-layout).
 
-### [`/api`](/tree/master/api)
+### [`/api`](/api)
 
 The API definitions for this service. The Protobuf `*.proto` files are written by hand, and the OpenAPI `*.swagger.json` files are generated.
 
-### [`/cmd`](/tree/master/cmd)
+### [`/cmd`](/cmd)
 
 `main.go` files for two Go executables:
 
 - `grpc-rest-service`: the server that serves the gRPC API, REST API, and OpenAPI documentation
 - `cli`: a CLI for making requests to the server
 
-### [`/internal`](/tree/master/internal)
+### [`/internal`](/internal)
 
 Packages used internally by the server:
 
@@ -55,7 +55,7 @@ Packages used internally by the server:
   - `greeter`: implementation of our `GreeterV1` service
   - `health`: implementation of Google's `grpc.health.v1.Health` service and our `HealthV1` service
 
-### [`/pkg`](/tree/master/pkg)
+### [`/pkg`](/pkg)
 
 Exported packages that can be used by other Go projects:
 
