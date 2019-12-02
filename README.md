@@ -76,7 +76,7 @@ Protobufs are used to describe the RPC methods, requests, and responses of your 
 If you're just looking for code generation then OpenAPI may already be a good solution. However, there are reasons to consider gRPC instead:
 
 - **Higher performance and smaller payloads**, as described above.
-- **A cleaner, more intuitive interface description language (IDL)**. This may land on personal preference, but [compare](tree/master/api) the `*.proto` specs with the `*.swagger.json` specs for this service -- which would you prefer working with?
+- **A cleaner, more intuitive interface description language (IDL)**. This may land on personal preference, but [compare](/api) the `*.proto` specs with the `*.swagger.json` specs for this service -- which would you prefer working with?
 - **Tighter integration with Go**. Although you can generate gRPC clients and servers for [multiple languages](https://grpc.io/docs/), it is particularly well integrated with Go and generates better code than the top OpenAPI code generators -- less boilerplate, more idiomatic.
 - **You can still use REST and OpenAPI with gRPC**. As this project demonstrates, it's possible and in fact easy to serve a RESTful version of your gRPC service at the same time, as well as an OpenAPI spec generated from your Protobuf files.
 
